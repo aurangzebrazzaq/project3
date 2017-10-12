@@ -26,6 +26,8 @@ html {
   text-size-adjust: 100%;
 }
 body {
+  background-color: #191E26;
+  color: #C6C6C6;
   padding-top: 3.666em; /* 66 / 18 = 3.666 */
   padding-right: 1.222em; /* 22 / 18 = 1.222 */
   padding-left: 1.222em; /* 22 / 18 = 1.222 */
@@ -71,7 +73,35 @@ audio {
   display: block;
   max-width: 100%;
 }
+/* The navigation bar */
+#navigation {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+}
 
+#navigation li {
+  list-style-type: none;
+  width: 33.333333%;
+  float: left;
+}
+
+/* Links inside the navbar */
+#navigation a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+}
+
+/* Main content */
+#main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
 /* Layout Styles */
 /*
   Hint: these tend to be

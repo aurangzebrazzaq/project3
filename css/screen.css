@@ -136,6 +136,10 @@ audio {
   text-decoration: none;
 }
 
+#navigation a:hover {
+  background-color: teal;
+}
+
 #navigation ul > li > a:active {
   background-color: #625D5D;
 }

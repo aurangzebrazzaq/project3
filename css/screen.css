@@ -26,6 +26,7 @@ html {
   text-size-adjust: 100%;
   font-family: Verdana, sans-serif;
 }
+
 body {
   background-color: #191E26;
   color: #C6C6C6;
@@ -40,6 +41,11 @@ title {
 
 h1, h2, h3, h4, h5, h6 , p {
   padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+h1 {
+  font-size: 2.222em; /* 40 / 18 = 2.222222 */
+  line-height: 1.25em; /* 30 / 24 */
+  padding-bottom: 0.5em; /* 9 / 18 */
 }
 
 h2 {
@@ -56,30 +62,39 @@ h3 {
   padding-bottom: 0.5em; /* 9 / 18 */
 }
 
-ol, ul {
+ul {
+  list-style-type: square;
+  margin-left: 2em;
+}
+
+ol ul {
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
 }
+
 ol {
   list-style-type: decimal;
 }
-ul {
-  list-style-type: square;
-}
+
 li ol,
 li ul {
   padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-bottom: 0;
 }
+
 li ol {
   list-style-type: lower-alpha;
 }
+
 li li ol {
   list-style-type: lower-roman;
 }
+
 li {
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
+
 }
+
 li li:last-child {
   padding-bottom: 0;
 }
@@ -91,6 +106,7 @@ a, a:visited, a:hover, a:active {
 a[href*="http"] {
   color: teal;
 }
+
 /* make all links not underlined
 a:link {
   text-decoration: none;
@@ -118,10 +134,12 @@ audio {
   display: block;
   max-width: 100%;
 }
+
 iframe {
   display: block;
   margin: 0 auto;
 }
+
 /* The navigation bar */
 #navigation {
   overflow: hidden;
@@ -184,6 +202,7 @@ iframe {
     padding-right: 9.30233581%;
   }
 }
+
 /* Layout Styles */
 /*
   Hint: these tend to be

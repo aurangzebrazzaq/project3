@@ -121,6 +121,7 @@ audio {
   list-style-type: none;
   width: 33.333333%;
   float: left;
+  padding-bottom: 0;
 }
 
 /* Links inside the navbar */

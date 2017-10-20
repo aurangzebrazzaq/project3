@@ -34,6 +34,9 @@ body {
   padding-left: 1.222em; /* 22 / 18 = 1.222 */
 }
 
+title {
+  text-decoration: none;
+}
 
 h1, h2, h3, h4, h5, h6 , p {
   padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
@@ -85,9 +88,11 @@ a, a:visited, a:hover, a:active {
   color: inherit;
 }
 
+/* make all links not underlined
 a:link {
   text-decoration: none;
 }
+*/
 
 /* Responsive Media */
 img {

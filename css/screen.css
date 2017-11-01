@@ -50,14 +50,12 @@ h1 {
 
 h2 {
   font-size: 1.7777em; /* 31.984 / 18 = 1.777 */
-  text-decoration: underline;
   line-height: 1.25em;/* 30 / 24 */
   padding-bottom: 0.5em; /* 9 / 18 */
 }
 
 h3 {
   font-size: 1.5555em;/* 28 / 18 */
-  text-decoration: underline;
   line-height: 1.66667em; /*30 / 18 */
   padding-bottom: 0.5em; /* 9 / 18 */
 }

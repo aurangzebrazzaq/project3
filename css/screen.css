@@ -18,7 +18,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
-  line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
+  line-height: 1.444em; /* 26 / 18 = 1.222 */
   text-rendering: optimizeLegibility;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -40,24 +40,21 @@ title {
 }
 
 h1, h2, h3, h4, h5, h6 , p {
-  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-bottom: 0.5em; /* 9 / 18 */
 }
 h1 {
   font-size: 2.222em; /* 40 / 18 = 2.222222 */
   line-height: 1.25em; /* 30 / 24 */
-  padding-bottom: 0.5em; /* 9 / 18 */
 }
 
 h2 {
-  font-size: 1.7777em; /* 31.984 / 18 = 1.777 */
+  font-size: 1.777em; /* 31.984 / 18 = 1.777 */
   line-height: 1.25em;/* 30 / 24 */
-  padding-bottom: 0.5em; /* 9 / 18 */
 }
 
 h3 {
   font-size: 1.5555em;/* 28 / 18 */
   line-height: 1.66667em; /*30 / 18 */
-  padding-bottom: 0.5em; /* 9 / 18 */
 }
 
 ul {
@@ -160,8 +157,8 @@ iframe {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding-top: 0.5em; /* 9/18 */
-  padding-bottom: 0.5em; /* 9/18 */
+  padding-top: 0.5em; /* 9 / 18 */
+  padding-bottom: 0.5em; /* 9 / 18 */
   text-decoration: none;
 }
 
@@ -185,12 +182,12 @@ iframe {
 
 #footer {
   clear: both;
-  font-size: 0.7em; /* smaller to be less of distraction to viewer*/
+  font-size: 0.777em; /* 14 / 18 = .777 | smaller to be less of distraction to the viewer*/
 }
 
 @media screen and (min-width: 640px) {
   html {
-    font-size: 1.25em;
+    font-size: 1.25em; /* 18 / 16 = 1.125 */
   }
 }
 

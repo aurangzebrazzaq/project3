@@ -40,11 +40,12 @@ title {
 }
 
 h1, h2, h3, h4, h5, h6 , p {
-  padding-bottom: 0.5em; /* 9 / 18 */
+  padding-bottom: 0.346em; /* 9 / 26 */
 }
+
 h1 {
   font-size: 2.222em; /* 40 / 18 = 2.222222 */
-  line-height: 1.25em; /* 30 / 24 */
+  line-height: 0.75em; /* 30 / 40 */
 }
 
 h2 {
@@ -108,6 +109,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
 figcaption {
   padding-bottom: 0;
 }
@@ -123,8 +125,11 @@ audio {
 }
 
 iframe {
+  padding-top: 1em;
   display: block;
   margin: 0 auto;
+  width: 70%;
+  height: 100%;
 }
 
 /* LAYOUT SYTLES */
@@ -136,6 +141,12 @@ iframe {
 }
 
 #song {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+#project {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 0;
@@ -195,7 +206,9 @@ iframe {
   clear: both;
   margin-top: 1em;
   font-size: 0.777em; /* 14 / 18 = .777 | smaller to be less of distraction to the viewer*/
+  padding-top: 1em;
 }
+
 #contact {
   margin-top: 1.5em;
 }
@@ -205,6 +218,7 @@ iframe {
   #navigation li {
     line-height: 2em;
   }
+
   html {
     font-size: 1.125 em; /* 18 / 16 = 1.125 */
   }
@@ -227,9 +241,11 @@ iframe {
     display: flex;
     flex-flow: row wrap;
   }
+
   #primary {
     margin-right: 2em;
   }
+
   .flexbox #content {
     display: flex;
     float: left;

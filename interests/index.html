@@ -8,18 +8,18 @@
   <link rel="stylesheet" href="../css/screen.css" />
 </head>
 
-<body>
-  <header id="header">
-    <h1>Aurangzeb Razzaq</h1>
-    <nav id="navigation">
-      <ul>
-        <li><a href="../">&#9751;&nbsp;Home</a></li>
-        <li><a href="../resume/">&#9884;&nbsp;Resume</a></li>
-        <li><a href="../interests/">&boxbox;&nbsp;Interests</a></li>
-      </ul>
-    </nav>
-  </header>
+<body id="page-interests">
+  <nav id="navigation">
+    <ul>
+      <li><a href="../">&#9751;&nbsp;Home</a></li>
+      <li><a href="../resume/">&#9884;&nbsp;Resume</a></li>
+      <li><a href="../interests/" class="active">&boxbox;&nbsp;Interests</a></li>
+    </ul>
+  </nav>
   <main id="content">
+    <header id="header">
+      <h1>Aurangzeb Razzaq</h1>
+    </header>
     <article id="primary">
       <h2>Interests</h2>
       <ul>
@@ -27,17 +27,19 @@
         <li>Building/Repairing Computers</li>
         <li>Hanging out with Friends</li>
       </ul>
+      <section>
+        <figure id="fav-song">
+          <figcaption id="song">My Favorite Song Right Now</figcaption>
+          <iframe src="https://www.youtube.com/embed/zInL1ZUPu7s" allowfullscreen></iframe>
+        </figure>
+        <figure id="presentation">
+          <figcaption id="project">Project: Building a Custom PC</figcaption>
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTV9Oq2FIjr-SkYihqTvuqgOQkXKYEkMNce1I-DuN9OqGbz8UOMo-r6rURXHf0iVzhVKgghiI88u6iL/embed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+        </figure>
+      </section>
     </article>
-    <figure id="fav-song">
-      <figcaption id="song">My Favorite Song Right Now</figcaption>
-      <iframe src="https://www.youtube.com/embed/zInL1ZUPu7s" width="560" height="315" allowfullscreen></iframe>
-    </figure>
-    <figure>
-      <figcaption id="project">Project: Building a Custom PC</figcaption>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTV9Oq2FIjr-SkYihqTvuqgOQkXKYEkMNce1I-DuN9OqGbz8UOMo-r6rURXHf0iVzhVKgghiI88u6iL/embed?start=false&loop=false&delayms=3000" width="640" height="389"></iframe>
-    </figure>
   </main>
-  <footer id="footer">
+  <footer>
     <p>&copy; 2017 Aurangzeb Razzaq</p>
   </footer>
 </body>

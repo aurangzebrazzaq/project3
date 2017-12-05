@@ -25,14 +25,15 @@ html {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: Verdana, sans-serif;
+  height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background-color: #191E26;
   color: #C6C6C6;
-  padding-top: 3.666em; /* 66 / 18 = 3.666 */
-  padding-right: 1.222em; /* 22 / 18 = 1.222 */
-  padding-left: 1.222em; /* 22 / 18 = 1.222 */
 }
 
 title {
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, h6 , p {
 
 h1 {
   font-size: 2.222em; /* 40 / 18 = 2.222222 */
-  line-height: 0.75em; /* 30 / 40 */
+  line-height: 1em; /* 30 / 40 */
 }
 
 h2 {
@@ -128,8 +129,26 @@ iframe {
   padding-top: 1em;
   display: block;
   margin: 0 auto;
-  width: 70%;
   height: 100%;
+}
+
+main {
+  flex-grow: 1;
+  padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-top: 1.444em; /* 44 / 18 = 2.444... */
+}
+
+footer {
+  background-color: #333;
+  color: #CCC;
+  margin-top: 1em;
+  font-size: 0.777em; /* 14 / 18 = .777 | smaller to be less of distraction to the viewer*/
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: space-around;
 }
 
 /* LAYOUT SYTLES */
@@ -154,11 +173,7 @@ iframe {
 
 /* The navigation bar */
 #navigation {
-  overflow: hidden;
   background-color: #333;
-  position: absolute; /* Set the navbar to an absolute position */
-  top: 0; /* Position the navbar at the top of the page */
-  left: 0;
   width: 100%; /* Full width */
 }
 
@@ -184,11 +199,13 @@ iframe {
   text-decoration: none;
 }
 
-#navigation a:hover {
+#navigation a:hover,
+#navigation .active {
   background-color: teal;
 }
 
-#navigation ul > li > a:active {
+#navigation ul > li > a:active,
+#navigation .active {
   background-color: #625D5D;
 }
 
@@ -202,15 +219,10 @@ iframe {
   font-family: Verdana, sans-serif;
 }
 
-#footer {
-  clear: both;
-  margin-top: 1em;
-  font-size: 0.777em; /* 14 / 18 = .777 | smaller to be less of distraction to the viewer*/
-  padding-top: 1em;
-}
 
 #contact {
   margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /*media queries*/
@@ -222,8 +234,35 @@ iframe {
   html {
     font-size: 1.125 em; /* 18 / 16 = 1.125 */
   }
-  #content, #contact {
-    flex: 1 auto;
+
+  article section:not(:last-child) {
+    padding-right: 1.222em; /* 22 / 18 = 1.222 */
+  }
+
+  #page-interests #primary section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #page-home main article {
+    display: flex;
+  }
+
+  #page-home #contact {
+    margin: 0;
+  }
+
+  #page-interests #primary section :not(:last-child) {
+    margin-right: 2em;
+  }
+
+  #primary section figure {
+    flex-grow: 1;
+  }
+
+  article iframe {
+    width: 100%;
+    height: 20vw;
   }
 }
 
@@ -232,26 +271,10 @@ iframe {
     line-height: 2em;
   }
 
-  body {
+  main {
     padding-left: 9.302325581%;
     padding-right: 9.30233581%;
-  }
-
-  #content {
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  #primary {
-    margin-right: 2em;
-  }
-
-  .flexbox #content {
-    display: flex;
-    float: left;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    position: relative;
   }
 
   .flexbox #contact {

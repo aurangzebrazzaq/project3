@@ -1,0 +1,14 @@
+$.noConflict();
+
+(function($) {
+
+
+
+
+
+
+
+
+
+
+})(jQuery);

@@ -233,6 +233,10 @@ footer {
   margin-bottom: 1.5em;
 }
 
+#btc {
+  margin-top: 1.5em;
+  margin-bottom: 4em;
+}
 /*media queries*/
 @media screen and (min-width: 640px) {
   #navigation li {

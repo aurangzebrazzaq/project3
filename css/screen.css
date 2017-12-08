@@ -156,6 +156,15 @@ footer {
   width: auto;
   max-width: 5em;
   max-height: 5em;
+  margin: 0 auto;
+}
+
+#bitcoin {
+  height: auto;
+  width: auto;
+  max-width: 4em;
+  max-height: 4em;
+  margin: 0 auto;
 }
 
 #song {
